@@ -13,8 +13,31 @@
 10: 1, 2, 5, 10
 15: 1, 3, 5, 15
 21: 1, 3, 7, 21
-28: 1, 2, 4, 7, 14, 28
+28: 1, 2, 4, 7, 14, 28 -> 5
+36: 1, 2, 3, 4, 6, 9, 12, 18, 36 -> 9
+45 : 1, 3, 5, 9, 15, 45 -> 6
+55 : 1, 5, 11, 55 -> 4
 위에서 보듯이, 5개 이상의 약수를 갖는 첫번째 삼각수는 28입니다.
 
 그러면 500개 이상의 약수를 갖는 가장 작은 삼각수는 얼마입니까?
 """
+import math
+
+def ansswer(n):
+    k = 1
+    incre = 2
+    while True:
+        count = 0
+
+        for i in range(1, int(math.sqrt(k)) + 1):
+            if k % i == 0:
+                if k == i:
+                    count += 1
+                else:
+                    count += 2
+        if count >= n:
+            return k
+        k += incre
+        incre += 1
+
+print(ansswer(500))
