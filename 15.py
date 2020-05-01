@@ -4,3 +4,15 @@
 그러면 20 × 20 격자에는 모두 몇 개의 경로가 있습니까?
 """
 
+def answer(n):
+    matrix = [[1] for i in range(n + 1)]
+
+    for i in range(n):
+        matrix[0].append(1)
+    for i in range(1, n + 1):
+        for k in range(1, n + 1):
+            matrix[i].append(matrix[i - 1][k] + matrix[i][k - 1])
+
+    return matrix[n][n]
+
+print(answer(20000))
