@@ -25,7 +25,7 @@ def answer(k):
     fibo = [0, 1, 1]
     for i in range(3, k * 5):
         fibo.append(fibo[i - 2] + fibo[i - 1])
-    print(fibo)
+
     for i in range(len(fibo)):
         if fibo[i] // 10 ** (k - 1) > 0:
             return i

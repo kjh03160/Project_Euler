@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Day.iml" filepath="$PROJECT_DIR$/.idea/Day.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../LIKELION/웹 크롤링/.idea/웹 크롤링.iml" filepath="$PROJECT_DIR$/../LIKELION/웹 크롤링/.idea/웹 크롤링.iml" />
     </modules>
   </component>
 </project>
