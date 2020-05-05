@@ -47,3 +47,11 @@ for i in prime_list(10000000):
     if i < 2000000:
         a += i
 print(a)
+
+
+
+
+
+
+
+
